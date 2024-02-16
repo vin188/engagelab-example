@@ -40,7 +40,6 @@
     //  推送初始化 
     MTpushInterface.init(
       {
-        dataCenter: '', //数据中心名称，如果不存在就用内置的默认数据中心
         report_url: "xxx/v3/report", //统计上报地址 必填
         appkey: "bdb22a5d1273f75fe58e0d5a",
         user_str: "adminDemo",
@@ -53,7 +52,6 @@
         webPushcallback (cod, tip) {
           console.log("用户得到的状态码及提示", code, tip);
         },
-        baseUrl: 'httpxxx', //服务器域名如果不存在则用打包时注入的地址
         //swUrl?: string; //默认 "/sw" + sdkEnv.prefix 
         canGetInfo (d) {
           //此时可以得到RegId 也可以在d里面取到所有的数据
