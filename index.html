@@ -52,6 +52,7 @@
         webPushcallback (cod, tip) {
           console.log("用户得到的状态码及提示", code, tip);
         },
+        baseUrl: 'https://webpush.api.engagelab.cc', //服务器域名如果不存在则用打包时注入的地址
         //swUrl?: string; //默认 "/sw" + sdkEnv.prefix 
         canGetInfo (d) {
           //此时可以得到RegId 也可以在d里面取到所有的数据
